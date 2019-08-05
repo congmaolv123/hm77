@@ -7,7 +7,7 @@ import router from './router/index'
 // 引入公共样式
 import '@/style/index.less'
 
-import axios from 'axios'
+import axios from '@/api'
 Vue.prototype.$http = axios
 
 // @路径的别名 src路径别名 在vue-cli创建的项目下才使用
