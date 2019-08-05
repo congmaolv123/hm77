@@ -29,6 +29,7 @@
 </template>
 
 <script>
+import store from '@/store'
 export default {
   data() {
     // 申明自定义校验函数
@@ -74,6 +75,8 @@ export default {
             )
             .then(res => {
               // res 响应对象   包含响应主体
+              // 存储用户信息sessionStorage
+              store.setUser(res.data.data)
               console.log(res.data);
               // 跳转去首页
               this.$router.push("/");
