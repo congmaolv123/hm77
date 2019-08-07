@@ -8,7 +8,10 @@ import router from './router/index'
 import '@/style/index.less'
 
 import axios from '@/api'
+
+import Mycom from '@/components'
 Vue.prototype.$http = axios
+Vue.use(Mycom)
 
 // @路径的别名 src路径别名 在vue-cli创建的项目下才使用
 // 目录下是有默认索引文件 index.js 就是索引文件 js vue json
