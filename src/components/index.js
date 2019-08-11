@@ -4,6 +4,7 @@
 import Mybread from '@/components/my-bread'
 import Mytest from '@/components/my-test'
 import MyChannel from '@/components/my-channel'
+import MyIamge from '@/components/my-image'
 
 // vue插件  暴露一个对象 对象中有一个选项  install 安装
 export default {
@@ -14,5 +15,6 @@ export default {
     // eslint-disable-next-line no-undef
     Vue.component(Mytest.name, Mytest)
     Vue.component(MyChannel.name, MyChannel)
+    Vue.component(MyIamge.name, MyIamge)
   }
 }
