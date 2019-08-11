@@ -7,8 +7,12 @@ import Welcome from '@/views/welcome'
 import Aticle from '@/views/article'
 import Notfound from '@/views/404'
 import store from '@/store'
+
 import Publish from '@/views/publish'
 import Comment from '@/views/comment'
+
+import Image from '@/views/image'
+
 Vue.use(VueRouter)
 
 const router = new VueRouter({
@@ -26,8 +30,13 @@ const router = new VueRouter({
       children: [
         { path: '/welcome', name: 'welcome', component: Welcome },
         { path: '/article', name: 'article', component: Aticle },
+<<<<<<< HEAD
         { path: '/publish', name: 'publish', component: Publish },
         { path: '/comment', name: 'comment', component: Comment }
+=======
+        { path: '/image', name: 'image', component: Image },
+        { path: '/publish', name: 'publish', component: Publish }
+>>>>>>> image
       ]
     },
     // 处理404
